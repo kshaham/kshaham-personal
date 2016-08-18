@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemelzaidan/coursera_portfolio_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemelzaidan/coursera_portfolio_website/issues"
+  },
+  "homepage": "https://github.com/kemelzaidan/coursera_portfolio_website#readme"
+}

@@ -1,0 +1,8 @@
+{
+Meteor.settings.contactForm = {
+  emailTo: 'shahamkamal@gmail.com',
+  emailSubject: function (params) {
+    'Message from ' + params.name + ' via contact form'
+  }
+};
+}

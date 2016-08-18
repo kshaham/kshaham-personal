@@ -1,0 +1,312 @@
+<template name="home">
+  <div>
+    <!-- Header -->
+    <header>
+        <div class="home-container">
+            <div class="intro-text">
+               <img src="/logos/laptop-icon.png" class="lg-centered" alt="">
+                <div class="intro-heading">Kamal Shaham</div>
+				<hr>
+								<div class="intro-head2">{{> Logo}}</div>
+                <a href="#about" class="page-scroll fa fa-chevron-circle-down fa-5x white"></a>
+
+            </div>
+        </div>
+    </header>
+<div class="sections">
+<section id="about">
+      <div class="container">
+          <div class="row">
+              <div class="intro-head2 img-centered">
+                  <div class="intro-heading">Hi, I'm Kamal Shaham</div>
+				<p class = large>I offer web consulting for growing small businesses seeking to expand their online reach. From simple brochure websites to full e-commerce stores, I provide a comprehensive package that will meet your business goals and needs. We'll cover every avenue to enhance and extend your business's footprint on the web.</p>
+			  </div>
+          </div>
+      </div>
+  </section>
+<section id="services">
+    <!-- Services Section -->
+	{{> Services}}
+</section>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="intro-heading">Portfolio</div>
+                    <div class="intro-head3">Here are some of the projects I have worked on in the past.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Vitaminshack</h4>
+                        <p class="text-muted">Website Design & SEO</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon2.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>NutritionTech</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon3.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>MusclePro</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon4.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>MuscleOutlet</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon5.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>JSMCT</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/portfolio/icon6.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>YourDigitalFix</h4>
+                        <p class="text-muted">Website Additions & SEO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+                    <div class="intro-heading">Contact</div>
+      {{>contactForm}}
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Kamal Shaham 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="mailto:shahamkamal@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/kamal-shaham-aa2b2b73"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="/portfolio/logo1.png" alt="">
+                            <p class="item-intro text-muted">Full website re-design and SEO optimization.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port1.png" alt="">
+                            <p>Growing up around the bodybuilding business I have had ample experience dealing with various supplement websites. This particular company had an optimized website with a great e-commerce backend. However the site had a very out-dated look to it and was in need of an update.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                           <img class="img-responsive img-centered" src="/portfolio/logo2.png" alt="">
+                            <p class="item-intro text-muted">Full website re-design.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port2.png" alt="">
+                            <p>NutritionTech hired me to design a simple company website displaying their information and a small e-commerce website portion for any online orders they might have had.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                                 <img class="img-responsive img-centered" src="/portfolio/logo3.png" alt="">
+                            <p class="item-intro text-muted">Full website re-design.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port3.png" alt="">
+                            <p>MusclePro enlisted me to create a simple form-type website where users can sign up for a free trial of their flagship product, as well as a small e-commerce section for their remaining few products.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                           <img class="img-responsive img-centered" src="/portfolio/logo4.png" alt="">
+                            <p class="item-intro text-muted">Full website re-design.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port4.png" alt="">
+                            <p>MuscleOutlet's new website was one of the most complicated websites I have worked on to date. This project required the development of custom plugins for individual tasks on the website. Plugins needed to be added to search by manufacturer, a custom brands dropdown menu needed to be developed as well.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                             <img class="img-responsive img-centered" src="/portfolio/logo5.png" alt="">
+                            <p class="item-intro text-muted">Full website re-design.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port5.png" alt="">
+                            <p>As a donation to a church located near me I developed their new website for all of their events and sermons. It allows for updates in a matter of seconds and is optimized for both mobile and tablet viewing.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                           <img class="img-responsive img-centered" src="/portfolio/logo6.jpg" alt="">
+                            <p class="item-intro text-muted">Website additions and SEO.</p>
+                            <img class="img-responsive img-centered" src="/portfolio/port6.png" alt="">
+                            <p>DigitalFix was in desperate need of a laptop repair section for their site as well as a revamped Adword campaign. I dramatically increased their traffic by updating and optimizing their Adword campaign through long-tail keywords.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</template>
